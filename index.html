@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lightworker Accelerator - Transform Your Calling Into Reality</title>
+    <title>Ascension Academy - You Don't Have To Transform Alone</title>
+    <meta name="description" content="Join a community of lightworkers on the same journey. Self-paced program + weekly guidance from Sarah Asha Rose. You'll never feel alone again.">
     <style>
         * {
             margin: 0;
@@ -24,6 +25,12 @@
             padding: 0 20px;
         }
 
+        .wide-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         section {
             padding: 80px 0;
             border-bottom: 1px solid #f5e6d3;
@@ -35,126 +42,298 @@
 
         /* Typography */
         h1 {
-            font-size: 3.5rem;
-            line-height: 1.2;
-            font-weight: 400;
+            font-size: 3.8rem;
+            line-height: 1.15;
+            font-weight: 600;
             color: #2d2d2d;
-            margin-bottom: 30px;
-            letter-spacing: -1px;
+            margin-bottom: 25px;
+            letter-spacing: -1.5px;
         }
 
         h2 {
-            font-size: 2.5rem;
-            line-height: 1.3;
-            font-weight: 400;
+            font-size: 2.8rem;
+            line-height: 1.25;
+            font-weight: 500;
             color: #2d2d2d;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             letter-spacing: -0.5px;
         }
 
         h3 {
-            font-size: 1.8rem;
-            line-height: 1.4;
+            font-size: 2rem;
+            line-height: 1.35;
             font-weight: 600;
             color: #3d3d3d;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             margin-bottom: 20px;
             color: #5a5a5a;
         }
 
         .subheading {
-            font-size: 1.5rem;
-            line-height: 1.6;
+            font-size: 1.65rem;
+            line-height: 1.55;
             color: #6a6a6a;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        strong {
+            color: #2d2d2d;
+            font-weight: 600;
         }
 
         /* Buttons */
         .btn {
             display: inline-block;
-            padding: 22px 50px;
-            font-size: 1.3rem;
+            padding: 24px 55px;
+            font-size: 1.4rem;
             font-family: 'Georgia', serif;
             background: linear-gradient(135deg, #d4a574 0%, #c9956e 100%);
             color: #ffffff;
             text-decoration: none;
             border: none;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: all 0.3s;
             letter-spacing: 0.5px;
             text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
         }
 
         .btn:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
         }
 
         .btn-large {
-            font-size: 1.5rem;
-            padding: 25px 60px;
+            font-size: 1.6rem;
+            padding: 28px 65px;
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 100px 0 80px;
+            padding: 70px 0 80px;
             background: linear-gradient(180deg, #fff5eb 0%, #fdfbf7 100%);
         }
 
+        .hero-image {
+            max-width: 400px;
+            margin: 0 auto 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #d4a574;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         .hero h1 {
-            max-width: 800px;
-            margin: 0 auto 30px;
+            max-width: 850px;
+            margin: 0 auto 25px;
         }
 
         .hero .subheading {
             max-width: 750px;
-            margin: 0 auto 50px;
+            margin: 0 auto 40px;
         }
 
-        .price-box {
+        .price-banner {
             display: inline-block;
-            padding: 15px 40px;
-            background: #f9f2e8;
-            border: 2px solid #e8d5bd;
-            margin: 30px 0;
-        }
-
-        .price-box p {
-            font-size: 1.4rem;
-            margin: 0;
-            color: #3d3d3d;
-        }
-
-        .price-amount {
-            font-size: 2rem;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);
+            color: white;
+            margin: 35px 0;
+            font-size: 1.5rem;
             font-weight: 600;
-            color: #c9956e;
+            border-radius: 4px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.2);
         }
 
-        /* Recognition Section */
-        .recognition-list {
-            max-width: 700px;
-            margin: 0 auto;
+        .price-banner .amount {
+            font-size: 2.2rem;
+            color: #d4a574;
+        }
+
+        /* Alert Box */
+        .alert-box {
+            background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+            color: white;
+            padding: 20px 30px;
             text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 30px 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
         }
 
-        .recognition-list p {
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.15rem;
+            color: #5a5a5a;
+            font-weight: 600;
+        }
+
+        .trust-badge::before {
+            content: "✓";
+            color: #d4a574;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        /* Problem/Solution */
+        .problem-section {
+            background: #fff5eb;
+            padding: 80px 0;
+        }
+
+        .problem-list {
+            max-width: 750px;
+            margin: 50px auto;
+        }
+
+        .problem-item {
+            background: white;
+            padding: 30px 40px;
+            margin: 25px 0;
+            border-left: 5px solid #f44336;
             font-size: 1.4rem;
-            margin: 30px 0;
-            color: #4a4a4a;
-            font-style: italic;
+            color: #3d3d3d;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .solution-item {
+            background: white;
+            padding: 30px 40px;
+            margin: 25px 0;
+            border-left: 5px solid #4caf50;
+            font-size: 1.4rem;
+            color: #3d3d3d;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Community Section */
+        .community-hero {
+            background: linear-gradient(135deg, #d4a574 0%, #c9956e 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 40px;
+        }
+
+        .community-hero h2 {
+            color: white;
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+        }
+
+        .community-hero p {
+            color: white;
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .community-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .community-feature {
+            background: #fffaf5;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 8px;
+            border: 2px solid #e8d5bd;
+            transition: transform 0.3s;
+        }
+
+        .community-feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .community-feature h3 {
+            font-size: 1.6rem;
+            color: #2d2d2d;
+            margin-bottom: 15px;
+        }
+
+        .community-feature p {
+            font-size: 1.15rem;
+            color: #5a5a5a;
+            margin: 0;
+        }
+
+        .community-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Stats */
+        .stats-section {
+            background: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+            max-width: 1000px;
+            margin: 50px auto 0;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #d4a574;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: #e8d5bd;
+            font-weight: 400;
         }
 
         /* Program Content */
         .pillar {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             padding: 40px;
             background: #fffaf5;
-            border-left: 4px solid #d4a574;
+            border-left: 5px solid #d4a574;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
         .pillar h3 {
@@ -168,9 +347,9 @@
         }
 
         .pillar li {
-            font-size: 1.2rem;
-            padding: 10px 0;
-            padding-left: 30px;
+            font-size: 1.25rem;
+            padding: 12px 0;
+            padding-left: 35px;
             position: relative;
             color: #5a5a5a;
         }
@@ -180,186 +359,11 @@
             position: absolute;
             left: 0;
             color: #d4a574;
-            font-size: 1rem;
-        }
-
-        /* Identity Section */
-        .identity-list {
-            max-width: 700px;
-            margin: 40px auto 0;
-        }
-
-        .identity-list ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .identity-list li {
-            font-size: 1.3rem;
-            padding: 15px 0;
-            padding-left: 35px;
-            position: relative;
-            color: #4a4a4a;
-        }
-
-        .identity-list li:before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #d4a574;
-            font-weight: 600;
-        }
-
-        /* Why This Works */
-        .truth-list {
-            max-width: 700px;
-            margin: 40px auto 0;
-            text-align: center;
-        }
-
-        .truth-list p {
-            font-size: 1.35rem;
-            margin: 30px 0;
-            color: #3d3d3d;
-            font-weight: 500;
-        }
-
-        /* Offer Box */
-        .offer-box {
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 50px;
-            background: linear-gradient(135deg, #fff5eb 0%, #fef9f3 100%);
-            border: 2px solid #e8d5bd;
-            text-align: center;
-        }
-
-        .offer-box h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #2d2d2d;
-        }
-
-        .offer-box .price-highlight {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #c9956e;
-            margin: 20px 0;
-        }
-
-        .offer-box .payment-option {
             font-size: 1.2rem;
-            color: #6a6a6a;
-            margin-bottom: 30px;
-        }
-
-        .offer-box ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-            margin: 30px 0;
-        }
-
-        .offer-box li {
-            font-size: 1.2rem;
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            color: #4a4a4a;
-        }
-
-        .offer-box li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #d4a574;
             font-weight: 600;
-            font-size: 1.3rem;
         }
 
-        /* Value Stack */
-        .value-stack {
-            max-width: 750px;
-            margin: 50px auto;
-            text-align: left;
-        }
-
-        .value-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid #f5e6d3;
-        }
-
-        .value-item:last-child {
-            border-bottom: 2px solid #d4a574;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-
-        .value-name {
-            font-size: 1.2rem;
-            color: #4a4a4a;
-        }
-
-        .value-price {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #c9956e;
-        }
-
-        .total-value {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2d2d2d;
-        }
-
-        .total-value .value-price {
-            font-size: 2rem;
-        }
-
-        .savings-box {
-            background: #f9f2e8;
-            padding: 25px;
-            margin: 30px 0;
-            border: 2px solid #e8d5bd;
-            text-align: center;
-        }
-
-        .savings-box p {
-            font-size: 1.3rem;
-            margin: 10px 0;
-            color: #3d3d3d;
-        }
-
-        .section-subtitle {
-            font-size: 1.4rem;
-            color: #3d3d3d;
-            font-weight: 600;
-            margin: 30px 0 20px;
-            text-align: center;
-        }
-
-        /* Image Sections */
-        .hero-image {
-            max-width: 400px;
-            margin: 40px auto;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid #e8d5bd;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
+        /* About Sarah */
         .about-sarah {
             display: flex;
             gap: 50px;
@@ -368,10 +372,11 @@
         }
 
         .about-sarah-image {
-            flex: 0 0 300px;
+            flex: 0 0 320px;
             border-radius: 8px;
             overflow: hidden;
-            border: 3px solid #e8d5bd;
+            border: 4px solid #e8d5bd;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
         }
 
         .about-sarah-image img {
@@ -386,192 +391,156 @@
 
         /* Testimonials */
         .testimonial {
-            background: #fffaf5;
-            padding: 40px;
+            background: white;
+            padding: 45px 50px;
             margin: 30px 0;
-            border-left: 4px solid #d4a574;
+            border-left: 5px solid #d4a574;
             position: relative;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
         }
 
         .testimonial-text {
-            font-size: 1.3rem;
+            font-size: 1.35rem;
             font-style: italic;
             color: #4a4a4a;
-            margin-bottom: 20px;
-            line-height: 1.8;
+            margin-bottom: 25px;
+            line-height: 1.75;
         }
 
         .testimonial-author {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: #c9956e;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .testimonial-role {
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: #6a6a6a;
+            margin-top: 5px;
+        }
+
+        /* Value Stack */
+        .value-stack {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid #f5e6d3;
+        }
+
+        .value-item:last-child {
+            border-bottom: 3px solid #d4a574;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+
+        .value-name {
+            font-size: 1.25rem;
+            color: #4a4a4a;
+            font-weight: 500;
+        }
+
+        .value-price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #c9956e;
+        }
+
+        .total-value {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0 20px;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #2d2d2d;
+        }
+
+        .total-value .value-price {
+            font-size: 2.5rem;
+        }
+
+        .savings-box {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+            color: white;
+            padding: 35px;
+            margin: 40px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(76, 175, 80, 0.3);
+        }
+
+        .savings-box p {
+            color: white;
+            margin: 10px 0;
+        }
+
+        .savings-box .investment-label {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .savings-box .investment-price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .savings-box .savings-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 20px;
         }
 
         /* Urgency Box */
         .urgency-box {
-            background: linear-gradient(135deg, #fff5eb 0%, #fef9f3 100%);
-            border: 2px solid #d4a574;
-            padding: 30px;
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            border: none;
+            padding: 40px;
             text-align: center;
-            margin: 40px 0;
+            margin: 50px 0;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(255, 152, 0, 0.3);
         }
 
         .urgency-box h3 {
-            font-size: 1.6rem;
-            color: #2d2d2d;
+            font-size: 2rem;
+            color: white;
             margin-bottom: 15px;
         }
 
         .urgency-box p {
-            font-size: 1.2rem;
-            color: #5a5a5a;
-            margin: 0;
-        }
-
-        /* Stats Section */
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin: 50px 0;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 30px;
-            background: #fffaf5;
-            border-radius: 8px;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 600;
-            color: #c9956e;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            color: #5a5a5a;
-        }
-
-        /* Trust Badges */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .trust-badge {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.1rem;
-            color: #5a5a5a;
-        }
-
-        .trust-badge::before {
-            content: "✓";
-            color: #d4a574;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-
-        /* Transformation Story */
-        .transformation-story {
-            background: linear-gradient(135deg, #fff5eb 0%, #fef9f3 100%);
-            padding: 50px;
-            margin: 50px 0;
-            border-radius: 8px;
-        }
-
-        .transformation-story h3 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #2d2d2d;
-        }
-
-        /* CTA Variations */
-        .cta-secondary {
-            display: inline-block;
-            padding: 18px 40px;
-            font-size: 1.2rem;
-            background: transparent;
-            color: #c9956e;
-            border: 2px solid #c9956e;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .cta-secondary:hover {
-            background: #c9956e;
-            color: white;
-        }
-
-        .sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(135deg, #d4a574 0%, #c9956e 100%);
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-            z-index: 1000;
-            display: none;
-        }
-
-        .sticky-cta.visible {
-            display: block;
-        }
-
-        .sticky-cta a {
-            color: white;
-            text-decoration: none;
             font-size: 1.3rem;
-            font-weight: 600;
-        }
-
-        /* Quote Box */
-        .quote-box {
-            text-align: center;
-            padding: 50px;
-            font-size: 1.8rem;
-            font-style: italic;
-            color: #4a4a4a;
-            margin: 50px 0;
-            position: relative;
-        }
-
-        .quote-box::before {
-            content: '"';
-            font-size: 6rem;
-            color: #e8d5bd;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            line-height: 1;
+            color: white;
+            margin: 0;
         }
 
         /* FAQ */
         .faq-item {
-            margin-bottom: 40px;
-            max-width: 750px;
+            margin-bottom: 35px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            background: white;
+            padding: 35px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
         .faq-item h3 {
-            font-size: 1.5rem;
-            color: #3d3d3d;
+            font-size: 1.6rem;
+            color: #2d2d2d;
             margin-bottom: 15px;
         }
 
@@ -579,6 +548,7 @@
             font-size: 1.2rem;
             color: #5a5a5a;
             line-height: 1.7;
+            margin: 0;
         }
 
         /* Final CTA */
@@ -589,13 +559,48 @@
         }
 
         .final-cta h2 {
-            max-width: 700px;
-            margin: 0 auto 50px;
-            font-size: 2.2rem;
-            line-height: 1.5;
+            max-width: 750px;
+            margin: 0 auto 40px;
+            font-size: 2.5rem;
+            line-height: 1.4;
         }
 
-        /* Center sections */
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #d4a574 0%, #c9956e 100%);
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 -4px 25px rgba(0,0,0,0.15);
+            z-index: 1000;
+            display: none;
+        }
+
+        .sticky-cta.visible {
+            display: block;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .sticky-cta a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        /* Section Styles */
         .section-center {
             text-align: center;
         }
@@ -607,19 +612,19 @@
         /* Mobile Responsive */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             h2 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             h3 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
 
             p, .subheading {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
             }
 
             section {
@@ -627,69 +632,25 @@
             }
 
             .hero {
-                padding: 60px 0 50px;
+                padding: 50px 0 60px;
+            }
+
+            .hero-image {
+                max-width: 280px;
             }
 
             .btn {
-                padding: 18px 35px;
-                font-size: 1.1rem;
-            }
-
-            .btn-large {
                 padding: 20px 40px;
                 font-size: 1.2rem;
             }
 
-            .pillar {
-                padding: 25px;
-            }
-
-            .offer-box {
-                padding: 30px 20px;
-            }
-
-            .price-box {
-                padding: 12px 25px;
-            }
-
-            .price-box p {
-                font-size: 1.1rem;
-            }
-
-            .price-amount {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-
-            .value-name {
-                font-size: 1rem;
-            }
-
-            .value-price {
-                font-size: 1.1rem;
-            }
-
-            .total-value {
+            .btn-large {
+                padding: 22px 45px;
                 font-size: 1.3rem;
             }
 
-            .total-value .value-price {
-                font-size: 1.6rem;
-            }
-
-            .savings-box {
-                padding: 20px 15px;
-            }
-
-            .section-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .hero-image {
-                max-width: 250px;
+            .pillar {
+                padding: 30px 25px;
             }
 
             .about-sarah {
@@ -700,39 +661,94 @@
             .about-sarah-image {
                 flex: 0 0 auto;
                 width: 100%;
-                max-width: 300px;
+                max-width: 320px;
                 margin: 0 auto;
             }
 
             .testimonial {
-                padding: 25px;
+                padding: 30px 25px;
             }
 
             .testimonial-text {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
             }
 
             .stats-container {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 30px;
             }
 
             .stat-number {
-                font-size: 2.2rem;
+                font-size: 3rem;
+            }
+
+            .community-features {
+                grid-template-columns: 1fr;
+            }
+
+            .value-stack {
+                padding: 30px 20px;
+            }
+
+            .value-name {
+                font-size: 1.05rem;
+            }
+
+            .value-price {
+                font-size: 1.15rem;
+            }
+
+            .total-value {
+                font-size: 1.4rem;
+            }
+
+            .total-value .value-price {
+                font-size: 1.9rem;
+            }
+
+            .savings-box {
+                padding: 25px 20px;
+            }
+
+            .savings-box .investment-price {
+                font-size: 2.5rem;
             }
 
             .trust-badges {
                 flex-direction: column;
                 gap: 15px;
+                align-items: center;
             }
 
-            .quote-box {
-                padding: 30px 20px;
-                font-size: 1.4rem;
+            .problem-item,
+            .solution-item {
+                padding: 25px 20px;
+                font-size: 1.2rem;
             }
 
-            .transformation-story {
-                padding: 30px 20px;
+            .community-hero {
+                padding: 60px 25px;
+            }
+
+            .community-hero h2 {
+                font-size: 2.2rem;
+            }
+
+            .community-hero p {
+                font-size: 1.2rem;
+            }
+
+            .price-banner {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+            }
+
+            .price-banner .amount {
+                font-size: 1.8rem;
+            }
+
+            .faq-item {
+                padding: 25px 20px;
             }
         }
     </style>
@@ -743,220 +759,288 @@
     <section class="hero">
         <div class="container">
             <div class="hero-image">
-                <img src="lightworker-assets/images/sarah-hero.png" alt="Sarah Asha Rose - Spiritual Guide & Transformational Coach">
+                <img src="lightworker-assets/images/sarah-hero.png" alt="Sarah Asha Rose - Founder of Ascension Academy">
             </div>
 
-            <h1>Step Into Your Calling. Become the Lightworker You're Meant to Be.</h1>
-            <p class="subheading">A 12-week transformational program with Sarah Asha Rose to break free from repeating patterns, discover your authentic purpose, and gain the confidence to share your message with the world.</p>
+            <h1>You Don't Have To Do This Alone</h1>
+            <p class="subheading">Join <strong>Ascension Academy</strong> — a self-paced transformation program with a community of people on the same journey, weekly guidance from Sarah Asha Rose, and everything you need to break free from your patterns and step into your power. <strong>You'll never feel alone again.</strong></p>
 
             <div class="trust-badges">
-                <span class="trust-badge">12-Week Proven System</span>
+                <span class="trust-badge">Self-Paced Program</span>
                 <span class="trust-badge">Lifetime Access</span>
-                <span class="trust-badge">1 Year of AI Support</span>
+                <span class="trust-badge">Weekly Live Calls</span>
+                <span class="trust-badge">Thriving Community</span>
             </div>
 
-            <div class="price-box">
-                <p>One Payment of <span class="price-amount">$1,499 USD</span></p>
+            <div class="alert-box">
+                ⚠️ LIMITED SPOTS AVAILABLE — Community spaces are capped to ensure quality support
+            </div>
+
+            <div class="price-banner">
+                Investment: <span class="amount">$1,499</span>
             </div>
 
             <br><br>
-            <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">Join the Accelerator</a>
+            <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">JOIN ASCENSION ACADEMY NOW</a>
         </div>
     </section>
 
-    <!-- THE SHIFT THEY CRAVE -->
-    <section>
-        <div class="container recognition-list">
-            <p>"You feel stuck in the same patterns, unable to find your true purpose."</p>
-            <p>"You know you have something to share, but you lack the confidence to put yourself out there."</p>
-            <p>"You've tried to break free before, but the same cycles keep pulling you back."</p>
-        </div>
-    </section>
-
-    <!-- ABOUT SARAH -->
-    <section>
+    <!-- THE PROBLEM -->
+    <section class="problem-section">
         <div class="container">
-            <div class="about-sarah">
-                <div class="about-sarah-image">
-                    <img src="lightworker-assets/images/sarah-about.png" alt="Sarah Asha Rose">
+            <h2 class="section-center">If This Sounds Familiar, You're In The Right Place</h2>
+
+            <div class="problem-list">
+                <div class="problem-item">
+                    ❌ You're stuck in the same patterns and feel completely alone in your struggle
                 </div>
-                <div class="about-sarah-content">
-                    <h2>Meet Sarah Asha Rose</h2>
-                    <p>Sarah Asha Rose is a transformational guide who has helped hundreds of people break free from limiting patterns and step into their authentic power.</p>
-                    <p>After her own journey of transformation—moving from feeling stuck and purposeless to becoming a confident lightworker—Sarah developed a proven system that combines deep inner work with practical strategies for sharing your message with the world.</p>
-                    <p>Her approach is grounded, direct, and spiritually powerful. She doesn't just teach healing—she guides you to embody your purpose and share it with confidence.</p>
+                <div class="problem-item">
+                    ❌ You've tried to transform before, but without support, you always fall back
+                </div>
+                <div class="problem-item">
+                    ❌ You know you have something to share, but you lack the confidence and community to do it
+                </div>
+                <div class="problem-item">
+                    ❌ You're tired of feeling isolated — no one around you understands this journey
+                </div>
+                <div class="problem-item">
+                    ❌ You want accountability, guidance, and people who "get it" without judgment
+                </div>
+            </div>
+
+            <h2 class="section-center" style="margin-top: 80px;">Here's What Changes When You Join Ascension Academy</h2>
+
+            <div class="problem-list">
+                <div class="solution-item">
+                    ✅ You become part of a community of lightworkers on the exact same journey
+                </div>
+                <div class="solution-item">
+                    ✅ You get weekly calls with Sarah where you can ask anything and get real guidance
+                </div>
+                <div class="solution-item">
+                    ✅ You have lifetime access to proven systems that break patterns for good
+                </div>
+                <div class="solution-item">
+                    ✅ You're held accountable by people who genuinely care about your transformation
+                </div>
+                <div class="solution-item">
+                    ✅ You finally feel seen, supported, and understood — never alone again
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- STATS SECTION -->
-    <section style="background: #fff5eb;">
+    <!-- COMMUNITY HERO -->
+    <section class="community-hero">
         <div class="container">
+            <h2>This Isn't Just A Program. It's A Community.</h2>
+            <p>The most powerful transformations happen when you're surrounded by people who understand you, support you, and are walking the same path. That's what Ascension Academy gives you.</p>
+        </div>
+    </section>
+
+    <!-- COMMUNITY FEATURES -->
+    <section>
+        <div class="wide-container">
+            <h2 class="section-center">What Makes Our Community Different</h2>
+
+            <div class="community-features">
+                <div class="community-feature">
+                    <span class="community-icon">👥</span>
+                    <h3>Real Connection</h3>
+                    <p>Connect with fellow members who truly understand your journey. No judgment, just genuine support and shared growth.</p>
+                </div>
+
+                <div class="community-feature">
+                    <span class="community-icon">🎯</span>
+                    <h3>Accountability Partners</h3>
+                    <p>Get paired with accountability partners who keep you on track and celebrate every win with you.</p>
+                </div>
+
+                <div class="community-feature">
+                    <span class="community-icon">💬</span>
+                    <h3>Weekly Group Calls</h3>
+                    <p>Join Sarah every week for live Q&A, guidance, and energetic support. Ask anything, get unstuck, receive clarity.</p>
+                </div>
+
+                <div class="community-feature">
+                    <span class="community-icon">🔥</span>
+                    <h3>24/7 Support</h3>
+                    <p>Community is always online. Post questions, share breakthroughs, or get support anytime you need it.</p>
+                </div>
+
+                <div class="community-feature">
+                    <span class="community-icon">🎊</span>
+                    <h3>Celebrate Together</h3>
+                    <p>Every breakthrough, every milestone, every transformation is celebrated by the entire community.</p>
+                </div>
+
+                <div class="community-feature">
+                    <span class="community-icon">🚀</span>
+                    <h3>Grow Together</h3>
+                    <p>Watch others transform and be inspired. Share your journey and inspire others. We rise together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 style="color: white;">Join Hundreds of Members Already Transforming</h2>
             <div class="stats-container">
                 <div class="stat-item">
                     <div class="stat-number">500+</div>
-                    <div class="stat-label">Students Transformed</div>
+                    <div class="stat-label">Active Members</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">12</div>
-                    <div class="stat-label">Weeks to Transformation</div>
+                    <div class="stat-number">52</div>
+                    <div class="stat-label">Weekly Calls Per Year</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">$11K+</div>
-                    <div class="stat-label">Value You're Getting</div>
+                    <div class="stat-label">Total Value</div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHAT'S INSIDE THE PROGRAM -->
-    <section>
-        <div class="container">
-            <h2 class="section-center">Everything Sarah Used To Become Who She Is</h2>
-
-            <div class="pillar">
-                <h3>Pillar 1 — The Lightworker Accelerator (12 Weeks)</h3>
-                <ul>
-                    <li>Comprehensive training for anyone who wants to become a lightworker and help others</li>
-                    <li>All the tools, teachings, and practices Sarah used to become a healer</li>
-                    <li>How to discover your unique message and purpose</li>
-                    <li>How to build the confidence to share your message publicly</li>
-                    <li>How to grow an aligned audience that resonates with your truth</li>
-                    <li>How to step into your authentic identity without fear or self-doubt</li>
-                    <li>How to embody your gifts and share them with the world</li>
-                </ul>
-            </div>
-
-            <div class="pillar">
-                <h3>Pillar 2 — Break Free & Align</h3>
-                <ul>
-                    <li>Break free from the chains of misery and repeating patterns that keep you stuck</li>
-                    <li>Full system to dissolve emotional, relational, and energetic blocks</li>
-                    <li>Move forward with clarity and purpose</li>
-                    <li>Tap into your authentic self and true identity</li>
-                    <li>Subconscious rewiring and nervous-system alignment</li>
-                    <li>Identity-level transformation that lasts</li>
-                </ul>
-            </div>
-
-            <div class="pillar">
-                <h3>Pillar 3 — Weekly Live Group Calls + Q&A</h3>
-                <ul>
-                    <li>Live guidance from Sarah</li>
-                    <li>Energetic calibrations</li>
-                    <li>Pattern-breaking</li>
-                    <li>Direct answers to personal blocks</li>
-                </ul>
-            </div>
-
-            <div class="pillar">
-                <h3>Pillar 4 — Sarah's Digital Brain (Orphic)</h3>
-                <ul>
-                    <li>One full year of 24/7 access to Sarah's AI</li>
-                    <li>Trained on her entire body of work</li>
-                    <li>Includes her unreleased book, teachings, content, and energetic philosophy</li>
-                    <li>Instant coaching, clarity, and guidance anytime you need it</li>
-                    <li>Get unstuck and receive personalized support on demand</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHO THIS IS FOR -->
-    <section>
-        <div class="container">
-            <h2 class="section-center">Who This Is For</h2>
-            <div class="identity-list">
-                <ul>
-                    <li>Anyone feeling stuck in repeating patterns and unable to find their purpose</li>
-                    <li>People who know they have something to share but lack the confidence to do it</li>
-                    <li>Anyone who wants to become a lightworker and help others transform</li>
-                    <li>Those ready to break free from chains of self-doubt and step into their authentic self</li>
-                    <li>People who feel called to guide, heal, or inspire others</li>
-                    <li>Anyone trying to build a spiritual business but lacking clarity and direction</li>
-                    <li>Anyone ready to become a grounded, confident, powerful version of themselves</li>
-                </ul>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Lifetime Access</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section style="background: #fff5eb;">
+    <section>
         <div class="container">
-            <h2 class="section-center">What People Are Saying</h2>
+            <h2 class="section-center">What Members Are Saying</h2>
 
             <div class="testimonial">
-                <p class="testimonial-text">"I was completely stuck in the same patterns for years. Within 8 weeks of working with Sarah, I finally broke free and found the confidence to share my message. The transformation has been life-changing."</p>
+                <p class="testimonial-text">"I was so isolated before joining. Within two weeks, I felt like I finally found my people. The community alone is worth 10x the price. Add in Sarah's weekly calls and all the training? Life-changing doesn't even cover it."</p>
                 <p class="testimonial-author">— Jessica M.</p>
-                <p class="testimonial-role">Life Coach & Healer</p>
+                <p class="testimonial-role">Ascension Academy Member</p>
             </div>
 
             <div class="testimonial">
-                <p class="testimonial-text">"Sarah's program gave me everything I needed—not just the healing, but the practical tools to actually share my gifts with the world. I finally feel like I'm living my purpose."</p>
+                <p class="testimonial-text">"I've tried programs before but always quit because I felt alone. Ascension Academy is different. The accountability, the support, knowing others are going through the same thing — it's what finally made transformation stick for me."</p>
                 <p class="testimonial-author">— Michael T.</p>
-                <p class="testimonial-role">Spiritual Guide</p>
+                <p class="testimonial-role">Ascension Academy Member</p>
             </div>
 
             <div class="testimonial">
-                <p class="testimonial-text">"The 21-day challenge alone changed my life. Combined with Sarah's live calls and the AI support, I've never felt more aligned and confident. This is the real deal."</p>
+                <p class="testimonial-text">"Having weekly access to Sarah is incredible, but honestly, the community is what saved me. When I'm struggling, I post and within minutes I have 5 people supporting me. I've never felt more seen and supported in my entire life."</p>
                 <p class="testimonial-author">— Amanda R.</p>
-                <p class="testimonial-role">Wellness Practitioner</p>
+                <p class="testimonial-role">Ascension Academy Member</p>
             </div>
         </div>
     </section>
 
-    <!-- WHY THIS WORKS -->
-    <section>
-        <div class="container">
-            <h2 class="section-center">Why This Works</h2>
-            <div class="truth-list">
-                <p>You can't break lifelong patterns alone—you need guidance and support.</p>
-                <p>Confidence to share your message comes from embodying your authentic self first.</p>
-                <p>You need a system that goes deeper than "healing" and transforms purpose into power.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- QUOTE BOX -->
-    <section>
-        <div class="container">
-            <div class="quote-box">
-                Your purpose isn't something you find. It's something you become.
-            </div>
-        </div>
-    </section>
-
-    <!-- URGENCY -->
+    <!-- ABOUT SARAH -->
     <section style="background: #fff5eb;">
         <div class="container">
-            <div class="urgency-box">
-                <h3>The Next Cohort Starts Soon</h3>
-                <p>Join now to secure your spot in this transformational 12-week journey. Spaces are limited to ensure personalized attention on live calls.</p>
+            <h2 class="section-center">Meet Your Guide: Sarah Asha Rose</h2>
+            <div class="about-sarah">
+                <div class="about-sarah-image">
+                    <img src="lightworker-assets/images/sarah-about.png" alt="Sarah Asha Rose">
+                </div>
+                <div class="about-sarah-content">
+                    <p>Sarah Asha Rose knows what it feels like to be stuck, alone, and searching for answers. After her own profound transformation, she built Ascension Academy to be the community she wished she'd had.</p>
+                    <p><strong>Sarah has guided 500+ people</strong> through breaking free from limiting patterns and stepping into their power. She leads weekly calls, shows up for the community, and creates a space where everyone feels safe to transform.</p>
+                    <p>Her approach is grounded, real, and deeply supportive. This isn't about toxic positivity or spiritual bypassing — it's about genuine transformation in a community that has your back.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- PRICE + WHAT THEY GET -->
-    <section id="join">
+    <!-- WHAT YOU GET -->
+    <section>
         <div class="container">
-            <h2 class="section-center">Everything You Get Today</h2>
+            <h2 class="section-center">Everything Included In Ascension Academy</h2>
+
+            <div class="pillar">
+                <h3>📚 Complete Self-Paced Transformation Program (Lifetime Access)</h3>
+                <ul>
+                    <li>All the tools, teachings, and practices Sarah used to become a healer</li>
+                    <li>Step-by-step system to break repeating patterns for good</li>
+                    <li>How to discover and embody your authentic purpose</li>
+                    <li>Build confidence to share your message with the world</li>
+                    <li>Nervous system alignment and subconscious rewiring</li>
+                    <li>Identity-level transformation that lasts</li>
+                </ul>
+            </div>
+
+            <div class="pillar">
+                <h3>👥 Private Community Access (Lifetime)</h3>
+                <ul>
+                    <li>24/7 access to thriving community of lightworkers</li>
+                    <li>Connect with accountability partners</li>
+                    <li>Post questions, share wins, get support anytime</li>
+                    <li>Never feel alone on your journey again</li>
+                    <li>Celebrate transformations together</li>
+                </ul>
+            </div>
+
+            <div class="pillar">
+                <h3>🎙️ Weekly Live Calls With Sarah (Ongoing)</h3>
+                <ul>
+                    <li>Every week: live Q&A and guidance with Sarah</li>
+                    <li>Ask anything, get unstuck, receive clarity</li>
+                    <li>Energetic calibrations and pattern-breaking support</li>
+                    <li>Direct answers to your personal blocks</li>
+                    <li>All calls recorded if you can't attend live</li>
+                </ul>
+            </div>
+
+            <div class="pillar">
+                <h3>🤖 Sarah's AI - Orphic (1 Year 24/7 Access)</h3>
+                <ul>
+                    <li>Instant access to Sarah's wisdom anytime, anywhere</li>
+                    <li>Trained on her entire body of work and teachings</li>
+                    <li>Get clarity and guidance when you're stuck at 2am</li>
+                    <li>Personalized support on demand</li>
+                </ul>
+            </div>
+
+            <div class="pillar">
+                <h3>🎁 Exclusive Bonuses (Lifetime Access)</h3>
+                <ul>
+                    <li>21-Day Transformation Challenge</li>
+                    <li>10 Most Common Blocks for Superhumans</li>
+                    <li>5 Ways to Attract Clients and Opportunities</li>
+                    <li>Accessing Your Divine Feminine</li>
+                    <li>5 Reasons They Love You But Don't Buy</li>
+                    <li>7 Money Magnet Mantras to Clear Abundance Blocks</li>
+                    <li>Create Amazing Emails to Nurture Leads</li>
+                    <li>The Freedom Codes System</li>
+                    <li>20 Tips For Facebook Engagement</li>
+                    <li>Self Love Bundle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE STACK -->
+    <section style="background: #fff5eb;">
+        <div class="container">
+            <h2 class="section-center">The Total Value Breakdown</h2>
 
             <div class="value-stack">
                 <div class="value-item">
-                    <span class="value-name">The Lightworker Accelerator (12 Weeks)</span>
+                    <span class="value-name">Complete Transformation Program</span>
                     <span class="value-price">$3,000</span>
                 </div>
                 <div class="value-item">
-                    <span class="value-name">Break Free & Align</span>
+                    <span class="value-name">Break Free & Align System</span>
                     <span class="value-price">$1,500</span>
                 </div>
                 <div class="value-item">
-                    <span class="value-name">12 Weekly Live Group Calls + Q&A</span>
-                    <span class="value-price">$2,400</span>
+                    <span class="value-name">Weekly Live Calls (52 per year)</span>
+                    <span class="value-price">$2,600</span>
                 </div>
                 <div class="value-item">
-                    <span class="value-name">Sarah's Digital Brain - Orphic AI (1 Year Access)</span>
+                    <span class="value-name">Private Community Access (Lifetime)</span>
+                    <span class="value-price">$997</span>
+                </div>
+                <div class="value-item">
+                    <span class="value-name">Orphic AI - 1 Year Access</span>
                     <span class="value-price">$1,200</span>
                 </div>
                 <div class="value-item">
@@ -964,44 +1048,8 @@
                     <span class="value-price">$497</span>
                 </div>
                 <div class="value-item">
-                    <span class="value-name">10 Most Common Blocks for Superhumans</span>
-                    <span class="value-price">$297</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">5 Ways to Attract Clients and Opportunities</span>
-                    <span class="value-price">$197</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">Accessing Your Divine Feminine</span>
-                    <span class="value-price">$297</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">5 Reasons They Love You But Don't Buy</span>
-                    <span class="value-price">$197</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">7 Money Magnet Mantras to Clear Abundance Blocks</span>
-                    <span class="value-price">$197</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">Create Amazing Emails to Nurture Leads</span>
-                    <span class="value-price">$297</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">The Freedom Codes System</span>
-                    <span class="value-price">$397</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">20 Tips For Facebook Engagement</span>
-                    <span class="value-price">$147</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">Self Love Bundle</span>
-                    <span class="value-price">$297</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-name">Community Access Inside Skool</span>
-                    <span class="value-price">$197</span>
+                    <span class="value-name">All Bonus Trainings & Resources</span>
+                    <span class="value-price">$1,323</span>
                 </div>
 
                 <div class="total-value">
@@ -1011,26 +1059,18 @@
             </div>
 
             <div class="savings-box">
-                <p><strong>Today's Investment:</strong></p>
-                <p style="font-size: 2.5rem; font-weight: 600; color: #c9956e; margin: 15px 0;">$1,499 USD</p>
-                <p style="margin-top: 20px; font-size: 1.4rem; font-weight: 600; color: #2d2d2d;">You Save Over $9,600</p>
+                <p class="investment-label">Your Investment Today</p>
+                <p class="investment-price">$1,499</p>
+                <p class="savings-text">You Save $9,618 (86% OFF)</p>
             </div>
 
-            <p class="section-subtitle">Immediate Access To:</p>
-            <div class="offer-box">
-                <ul>
-                    <li>All course materials and trainings (Lifetime Access)</li>
-                    <li>Break Free & Align system (Lifetime Access)</li>
-                    <li>All bonus trainings and resources (Lifetime Access)</li>
-                    <li>21-Day Transformation Challenge (Lifetime Access)</li>
-                    <li>Self Love Bundle (Lifetime Access)</li>
-                    <li>Orphic AI - Sarah's Digital Brain (1 Year Access)</li>
-                    <li>Weekly live group calls for 12 weeks (All recordings yours forever)</li>
-                    <li>Community and support inside Skool</li>
-                </ul>
+            <div class="urgency-box">
+                <h3>⚡ This Price Won't Last Forever</h3>
+                <p>We're growing the community carefully. Once we hit capacity, the price increases to $2,997. Lock in founding member pricing now.</p>
+            </div>
 
-                <br>
-                <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">Join the Accelerator</a>
+            <div style="text-align: center; margin: 50px 0;">
+                <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">YES, I'M READY TO JOIN NOW</a>
             </div>
         </div>
     </section>
@@ -1038,79 +1078,98 @@
     <!-- FAQ -->
     <section>
         <div class="container">
-            <h2 class="section-center">Frequently Asked Questions</h2>
+            <h2 class="section-center">Common Questions</h2>
 
             <div class="faq-item">
-                <h3>Do I need experience?</h3>
-                <p>No. This program is designed for people at every stage—whether you're just beginning to understand your calling or you've been exploring spirituality for years. What matters is your willingness to transform.</p>
+                <h3>Is this really self-paced?</h3>
+                <p>Yes! You get immediate access to everything and can go through the materials at your own pace. The weekly calls with Sarah are ongoing, so you can join whenever you're ready.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Is this for beginners?</h3>
-                <p>Yes. The Lightworker Accelerator meets you where you are. Sarah's approach is grounded, practical, and designed to guide you from confusion to clarity, no matter where you're starting from.</p>
+                <h3>What if I'm a complete beginner?</h3>
+                <p>Perfect! Ascension Academy is designed for people at every stage. Whether you're just starting or you've been on this journey for years, you'll find exactly what you need. The community welcomes everyone.</p>
             </div>
 
             <div class="faq-item">
-                <h3>How long do I keep access?</h3>
-                <p>You receive lifetime access to all course materials, trainings, bonus resources, and call recordings. Orphic AI (Sarah's Digital Brain) includes one full year of 24/7 access. The live group calls run for 12 weeks, and all recordings are yours to keep forever.</p>
+                <h3>How does the community work?</h3>
+                <p>You'll get access to our private platform where members connect, share, and support each other 24/7. It's like having hundreds of friends who truly understand your journey. You can post questions, share wins, find accountability partners, and never feel alone.</p>
             </div>
 
             <div class="faq-item">
-                <h3>What if I can't attend every call?</h3>
-                <p>Every live call is recorded and uploaded to the platform. You can watch on your own time and still receive the full benefit of the teachings and energetic transmissions.</p>
+                <h3>What if I can't attend the weekly calls live?</h3>
+                <p>No problem! Every call is recorded and uploaded immediately. You can watch on your own time and still get the full benefit. Many members prefer watching replays so they can pause and take notes.</p>
             </div>
 
             <div class="faq-item">
-                <h3>What if I don't want to start a business?</h3>
-                <p>This program is first and foremost about breaking free from patterns, finding your purpose, and gaining the confidence to share your authentic self with the world. Whether you want to build a business, help others informally, or simply become the most powerful version of yourself, this program will guide you there.</p>
+                <h3>How long do I have access?</h3>
+                <p>Lifetime access to all course materials, community, and weekly calls. The only thing that's time-limited is Orphic AI (1 year), but everything else is yours forever.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Is this 1:1?</h3>
-                <p>No. This is a group program with live weekly calls, community support, and 24/7 access to Sarah's AI. You'll receive direct guidance during calls, but this is not private coaching.</p>
+                <h3>What if I don't want to build a spiritual business?</h3>
+                <p>That's totally fine! While some members use these tools to build practices, most are here for personal transformation and community. You can take what you need and apply it however feels right for you.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Is there a refund?</h3>
-                <p>No refunds are offered due to immediate digital access being granted upon enrollment. We honor your commitment to your transformation.</p>
+                <h3>Is there a refund policy?</h3>
+                <p>Due to immediate access to all digital content and the community, we don't offer refunds. However, we're confident that if you show up and engage, you'll experience transformation. That's why 500+ members are already inside.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why is the price so low compared to the value?</h3>
+                <p>Sarah's mission is to make transformation accessible. She'd rather have a thriving community of committed people than gate-keep this work behind a $10K price tag. This is founding member pricing — it will increase as we grow.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I feel scared or intimidated to join?</h3>
+                <p>That's completely normal, and it means you're on the edge of real growth. The community is warm, welcoming, and judgment-free. Everyone remembers what it felt like to be new. You'll be supported from day one.</p>
             </div>
         </div>
     </section>
 
-    <!-- TRANSFORMATION STORY -->
-    <section>
+    <!-- FINAL PUSH -->
+    <section style="background: #fff5eb; padding: 100px 0;">
         <div class="container">
-            <div class="transformation-story">
-                <h3>Imagine 12 Weeks From Now...</h3>
-                <p style="font-size: 1.2rem; line-height: 1.8; color: #4a4a4a;">You wake up knowing exactly who you are and what you're here to do. The patterns that once controlled you are gone. You share your message confidently, attracting aligned people who resonate with your truth. You're not just healed—you're embodied, powerful, and living your purpose every single day.</p>
-                <p style="font-size: 1.2rem; line-height: 1.8; color: #4a4a4a; margin-top: 20px;">This isn't a dream. This is what happens when you commit to The Lightworker Accelerator.</p>
+            <h2 class="section-center" style="font-size: 3rem; max-width: 800px; margin: 0 auto 40px;">You Have Two Choices Right Now</h2>
+
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="problem-item" style="margin: 30px 0;">
+                    <strong>Choice #1:</strong> Continue trying to do this alone. Keep struggling with the same patterns. Keep feeling isolated. Keep wondering if transformation is even possible for you.
+                </div>
+
+                <div class="solution-item" style="margin: 30px 0;">
+                    <strong>Choice #2:</strong> Join Ascension Academy today. Step into a community that gets it. Get weekly guidance from Sarah. Access proven systems that actually work. Never feel alone again.
+                </div>
             </div>
+
+            <p style="text-align: center; font-size: 1.5rem; margin: 50px 0 20px; color: #2d2d2d; font-weight: 600;">Which future do you choose?</p>
         </div>
     </section>
 
     <!-- FINAL CTA -->
     <section class="final-cta">
         <div class="container">
-            <h2>The old version of you has served its purpose. Now it's time to step into the one you were meant to become.</h2>
-            <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">Join the Accelerator for $1,499 USD</a>
+            <h2>The Community Is Waiting For You.</h2>
+            <p style="font-size: 1.4rem; max-width: 650px; margin: 0 auto 40px;">Join 500+ members who are transforming together. You don't have to do this alone anymore.</p>
+            <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">JOIN ASCENSION ACADEMY - $1,499</a>
+            <p style="font-size: 1.1rem; margin-top: 30px; color: #6a6a6a;">Lifetime access • Weekly calls • Thriving community • $11K+ value</p>
         </div>
     </section>
 
     <!-- STICKY CTA BAR -->
     <div class="sticky-cta" id="stickyCta">
-        <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e">Join The Lightworker Accelerator — $1,499 USD →</a>
+        <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e">Join Ascension Academy — $1,499 (Save $9,618) →</a>
     </div>
 
     <script>
         // Sticky CTA Bar
         window.addEventListener('scroll', function() {
             const stickyCta = document.getElementById('stickyCta');
-            const joinSection = document.getElementById('join');
-            const joinPosition = joinSection.offsetTop;
-            const scrollPosition = window.pageYOffset + window.innerHeight;
+            const scrollPosition = window.pageYOffset;
+            const windowHeight = window.innerHeight;
 
-            // Show sticky CTA after scrolling past hero section
-            if (window.pageYOffset > 800 && scrollPosition < joinPosition + 200) {
+            // Show sticky CTA after scrolling past first screen
+            if (scrollPosition > windowHeight * 0.8) {
                 stickyCta.classList.add('visible');
             } else {
                 stickyCta.classList.remove('visible');
