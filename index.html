@@ -766,22 +766,19 @@
             <p class="subheading">Join <strong>Ascension Academy</strong> — a self-paced transformation program with a community of people on the same journey, weekly guidance from Sarah Asha Rose, and everything you need to break free from your patterns and step into your power. <strong>You'll never feel alone again.</strong></p>
 
             <div class="trust-badges">
-                <span class="trust-badge">Self-Paced Program</span>
+                <span class="trust-badge">500+ Active Members</span>
                 <span class="trust-badge">Lifetime Access</span>
-                <span class="trust-badge">Weekly Live Calls</span>
-                <span class="trust-badge">Thriving Community</span>
+                <span class="trust-badge">Weekly Live Guidance</span>
+                <span class="trust-badge">Self-Paced Learning</span>
             </div>
 
             <div class="alert-box">
                 ⚠️ LIMITED SPOTS AVAILABLE — Community spaces are capped to ensure quality support
             </div>
 
-            <div class="price-banner">
-                Investment: <span class="amount">$1,499</span>
-            </div>
-
             <br><br>
-            <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" class="btn btn-large">JOIN ASCENSION ACADEMY NOW</a>
+            <a href="#reveal" class="btn btn-large">SHOW ME WHAT'S INSIDE</a>
+            <p style="margin-top: 20px; font-size: 1.1rem; color: #6a6a6a; font-style: italic;">Scroll down to see everything included →</p>
         </div>
     </section>
 
@@ -1017,10 +1014,21 @@
         </div>
     </section>
 
+    <!-- PRICE REVEAL BUILDUP -->
+    <section id="reveal" style="background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%); color: white; text-align: center; padding: 100px 40px;">
+        <div class="container">
+            <h2 style="color: white; font-size: 3.2rem; margin-bottom: 30px;">So... How Much Does All Of This Cost?</h2>
+            <p style="color: #e8d5bd; font-size: 1.5rem; max-width: 700px; margin: 0 auto 40px;">Let's be honest. A program like this — with lifetime access, a thriving community, weekly calls with Sarah, AI support, and all the training — could easily cost $10,000 or more.</p>
+            <p style="color: #e8d5bd; font-size: 1.5rem; max-width: 700px; margin: 0 auto 40px;">Most transformation programs charge that for way less. Some charge $5,000 just for the course alone, with no community or ongoing support.</p>
+            <p style="color: white; font-size: 1.7rem; max-width: 700px; margin: 0 auto 50px; font-weight: 600;">But that's not what we're doing here.</p>
+            <p style="color: #d4a574; font-size: 1.4rem; margin-bottom: 30px;">Let me show you the real numbers...</p>
+        </div>
+    </section>
+
     <!-- VALUE STACK -->
     <section style="background: #fff5eb;">
         <div class="container">
-            <h2 class="section-center">The Total Value Breakdown</h2>
+            <h2 class="section-center">Here's What Everything Is Actually Worth</h2>
 
             <div class="value-stack">
                 <div class="value-item">
@@ -1058,10 +1066,19 @@
                 </div>
             </div>
 
+            <div style="text-align: center; margin: 60px 0; padding: 40px; background: white; border-radius: 8px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);">
+                <p style="font-size: 1.5rem; color: #5a5a5a; margin-bottom: 20px;">If you were paying full price, that would be...</p>
+                <p style="font-size: 3rem; font-weight: 700; color: #2d2d2d; text-decoration: line-through; margin-bottom: 30px;">$11,117</p>
+                <p style="font-size: 1.7rem; color: #5a5a5a; margin-bottom: 30px; font-weight: 600;">But you're not paying that.</p>
+                <p style="font-size: 1.4rem; color: #5a5a5a; margin-bottom: 20px;">As a founding member, your investment today is just...</p>
+            </div>
+
             <div class="savings-box">
                 <p class="investment-label">Your Investment Today</p>
                 <p class="investment-price">$1,499</p>
                 <p class="savings-text">You Save $9,618 (86% OFF)</p>
+                <p style="margin-top: 25px; font-size: 1.3rem;">That's less than $125/month if you think about it over a year.</p>
+                <p style="font-size: 1.2rem; margin-top: 10px;">But you get lifetime access + ongoing weekly calls.</p>
             </div>
 
             <div class="urgency-box">
@@ -1158,19 +1175,43 @@
 
     <!-- STICKY CTA BAR -->
     <div class="sticky-cta" id="stickyCta">
-        <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e">Join Ascension Academy — $1,499 (Save $9,618) →</a>
+        <a href="https://buy.stripe.com/aFa5kFaVraBYaz19nX3Je0e" id="stickyCTAText">Join Ascension Academy Now →</a>
     </div>
 
     <script>
-        // Sticky CTA Bar
+        // Smooth scroll for "Show Me What's Inside" button
+        document.querySelector('a[href="#reveal"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#reveal').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+
+        // Sticky CTA Bar with dynamic text
         window.addEventListener('scroll', function() {
             const stickyCta = document.getElementById('stickyCta');
+            const stickyCTAText = document.getElementById('stickyCTAText');
+            const revealSection = document.getElementById('reveal');
             const scrollPosition = window.pageYOffset;
             const windowHeight = window.innerHeight;
+            const revealPosition = revealSection.offsetTop;
 
             // Show sticky CTA after scrolling past first screen
             if (scrollPosition > windowHeight * 0.8) {
                 stickyCta.classList.add('visible');
+
+                // Update text based on whether they've seen the price
+                if (scrollPosition > revealPosition) {
+                    stickyCTAText.innerHTML = 'Join Ascension Academy — $1,499 (Save $9,618) →';
+                } else {
+                    stickyCTAText.innerHTML = 'See What\'s Inside Ascension Academy →';
+                    stickyCTAText.href = '#reveal';
+                    stickyCTAText.onclick = function(e) {
+                        e.preventDefault();
+                        revealSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    };
+                }
             } else {
                 stickyCta.classList.remove('visible');
             }
